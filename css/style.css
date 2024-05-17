@@ -1,0 +1,859 @@
+/* instruction from the client side for color typography
+color --#e67e22
+banner color --->   #fdf2e9
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #555;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+/* Navigation bar */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin-top: -6.0rem;
+    margin-bottom: 6.1rem;
+}
+
+.logo {
+    max-width: 17.1rem;
+    height: auto;
+    margin-left: 4.5rem;
+}
+
+.navigation {
+    margin-right: 8.0rem;
+}
+
+.navitem:link,
+.navitem:visited {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+    margin-right: 2.2rem;
+    transition: all 0.3s;
+}
+
+.navitem:hover,
+.navitem:active {
+    color: #ca8242;
+}
+
+.navitem:last-child {
+    background-color: #ed862d;
+    padding: 1.2rem 2.4rem;
+    margin-right: 0;
+    border-radius: 6%;
+    color: #fff;
+}
+
+.navitem:last-child:hover,
+.navitem:last-child:active {
+    background-color: #ca8242;
+}
+
+
+
+
+/* Main header section */
+.banner {
+    background-color: #fdf2e9;
+    padding: 9.6rem 0;
+}
+
+.container {
+    /* aligning banner-heading and banner-photos in a line */
+    max-width: 130rem;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    column-gap: 9.6rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.banner-heading {
+    font-size: 5.2rem;
+    line-height: 1.1;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    letter-spacing: -1px;
+}
+
+.banner-para {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 4.8rem;
+}
+
+.hero-img {
+    /* adjusting the size of the img */
+    max-width: 100%;
+}
+
+/* designing banner buttons  */
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 25px;
+    padding: 1.5rem 3.2rem;
+    border-radius: 0.9rem;
+    transition: all 0.3s;
+}
+
+.main-btn:link,
+.main-btn:visited {
+    background-color: #e67e22;
+    color: #fff;
+    margin-right: 2.2rem;
+
+}
+
+.main-btn:hover,
+.main-btn:active {
+    background-color: #d27523;
+}
+
+.secondary-btn:link,
+.secondary-btn:visited {
+    color: #555;
+    background-color: #fff;
+}
+
+.secondary-btn:hover,
+.secondary-btn:active {
+    background-color: #fdf2e9;
+    /* border:  3px solid #fff ; */
+
+    /* Trick to add inside border to the button */
+    box-shadow: inset 0 0 0 3px #fff;
+}
+
+/* sub-container  inside the container */
+
+.sub-container {
+    display: grid;
+    margin-top: 1.8rem;
+    grid-template-columns: repeat(2, 0.4fr);
+
+}
+
+.customer-img img {
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 50%;
+    border: 3px solid whitesmoke;
+}
+
+.customer-img {
+    display: grid;
+    grid-template-columns: repeat(6, 3.2rem);
+
+}
+
+.number-meals {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.number-meals span {
+    color: #e67e22;
+    font-weight: 700;
+}
+
+/* Seciton 2 */
+/* Featured section  */
+.as-featured {
+    display: block;
+    margin-top: 3.7rem;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.sub-container2 {
+    margin-top: 2.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8.5rem;
+}
+
+.brands img {
+    max-width: 17.0rem;
+    filter: grayscale(100%);
+
+}
+
+/* secition 3 how it  works  */
+.section-how {
+    padding: 9.6rem 0;
+
+}
+
+.container2 {
+    max-width: 130rem;
+    padding: 0 4.5rem;
+    margin: 0 auto;
+    /* margin-left: 10rem; */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 9.6rem;
+    row-gap: 8.6rem;
+
+}
+
+.app-img {
+    width: 35%;
+}
+
+.mar-left {
+    margin-left: 2.5rem;
+}
+
+.heading {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #d27523;
+    font-weight: 500;
+    margin-bottom: 1.3rem;
+}
+
+.sub-heading {
+    font-size: 4.2rem;
+    color: #222;
+    margin-bottom: 11.6rem;
+}
+
+.step-number {
+    font-size: 9.6rem;
+    font-weight: 700;
+    color: #ddd;
+}
+
+.step-heading {
+    color: #222;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
+.step-para {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+.mar-left {
+    /* margin-left: 15.5rem; */
+    margin-left: 17.5rem;
+}
+
+.step-tex-img {
+    position: relative;
+}
+
+.step-tex-img::before {
+    content: "";
+    display: block;
+    width: 60%;
+    background-color: #fae9d9;
+    padding-bottom: 60%;
+    position: absolute;
+    top: 2%;
+    left: -11%;
+    border-radius: 50%;
+    z-index: -2;
+}
+
+.step-tex-img::after {
+    content: "";
+    display: block;
+    width: 50%;
+    background-color: #fedebf;
+    padding-bottom: 50%;
+    position: absolute;
+    top: 9%;
+    left: -6%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.align-img-box::before {
+    content: "";
+    display: block;
+    width: 60%;
+    background-color: #fae9d9;
+    padding-bottom: 60%;
+    position: absolute;
+    top: 2%;
+    left: 20%;
+    border-radius: 50%;
+    z-index: -2;
+}
+
+.align-img-box::after {
+    content: "";
+    display: block;
+    width: 50%;
+    background-color: #fedebf;
+    padding-bottom: 50%;
+    position: absolute;
+    top: 9%;
+    left: 25%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Meals */
+.meals {
+    width: 130rem;
+    margin: 6.6rem auto;
+    /* background-color: violet; */
+}
+
+.card-1-2 {
+    background-color: rgb(253, 251, 251);
+    transition: all 0.4s;
+    border-radius: 11px;
+    overflow: hidden;
+    box-shadow: 0 0 8px 0.8rem rgb(242, 239, 239);
+
+}
+
+.card-1-2:hover {
+    transform: translateY(-1.2rem);
+
+}
+
+.center {
+    text-align: center;
+
+}
+
+.meal-heading {
+    font-size: 2.2rem;
+    margin-bottom: 1.6rem;
+    color: #e67e22;
+}
+
+.meal-sub-heading {
+    font-size: 4.2rem;
+    color: #333;
+}
+
+.container3 {
+    margin-top: 3.8rem;
+    padding: 5.5rem;
+}
+
+.grid-column-2-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5.5rem;
+}
+
+.meal-photo {
+    max-width: 100%;
+    display: block;
+}
+
+.diet-heading {
+    font-size: 2.8rem;
+    color: #333;
+}
+
+.container-diet {
+    padding: 1.9rem;
+}
+
+.style {
+    background-color: #51cf66;
+    ;
+    font-size: 1.5rem;
+    display: inline-block;
+    color: #222;
+    padding: 4px 8px;
+    border-radius: 22px;
+    margin-top: 1.2rem;
+}
+
+.vegan {
+    background-color: #94d82d;
+    margin-right: .7rem;
+}
+
+.paled {
+    background-color: #ffd43b;
+}
+
+.card-heading {
+    color: #333;
+    margin-top: 1.5rem;
+    font-size: 2.2rem;
+    margin-left: 12px;
+    margin-bottom: 2.5rem;
+}
+
+.card-list {
+    list-style: none;
+    font-size: 2rem;
+    color: #555;
+    margin-top: 1.2rem;
+    margin-left: 15px;
+}
+
+.card-list li {
+    margin-top: 1.5rem;
+}
+
+.every-diet {
+    list-style: none;
+    font-size: 2rem;
+    color: #555;
+    margin-top: 1.8rem;
+    margin-left: 15px;
+}
+
+.every-diet li {
+    margin-top: 1.4rem;
+}
+
+.recipie-container {
+    display: flex;
+}
+
+.recipie:link,
+.recipie:visited {
+    display: inline-block;
+    font-size: 2.1rem;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    color: #e67e22;
+    margin: 4.5rem auto;
+    margin-bottom: 2.5rem;
+
+}
+
+.recipie:hover,
+.recipie:active {
+    border-bottom: none;
+}
+
+/* .card-3{
+    background-color: rgb(222, 221, 221);
+    transition: all 0.4s;
+}
+.card-3:hover{
+    transform: scale(1.5);
+} */
+
+/* ionicons */
+ion-icon {
+    color: #ed862d;
+    font-size: 2.2rem;
+}
+
+/* Testimonial section */
+.testimonial-section {
+    margin-top: 2.5rem;
+    background-color: #fdf2e9;
+}
+
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.testimonial-text {
+    padding: 9.6rem;
+}
+
+.testimonial-heading {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #cf711f;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75px;
+}
+
+.testimonial-sub-heading {
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+    color: #333;
+}
+
+.testimonial-review {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.9rem;
+    column-gap: 3.2rem;
+}
+
+.testimonial img {
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+
+.testimonial-para {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.4rem;
+    width: 33rem;
+
+}
+
+.testimonial-by {
+    font-size: 1.5rem;
+}
+
+.testimonial-img {
+    margin-top: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    padding: 1.2rem;
+}
+
+.galery-item {
+    overflow: hidden;
+}
+
+.galery-img {
+    max-width: 100%;
+    display: block;
+    transition: all 0.5s;
+}
+
+.galery-img:hover {
+    transform: scale(1.1);
+}
+
+/* pricing */
+.pricing {
+    margin: 1.5rem 0;
+    width: 130rem;
+    padding: 9.0rem;
+}
+
+.pricing-heading {
+    display: inline-block;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #cf711f;
+}
+
+.pricing-sub-heading {
+    margin-top: 2.0rem;
+    font-size: 4.2rem;
+    color: #333;
+}
+
+.price-heading {
+    color: #cf711f;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.container-pricing {
+    margin-top: 6.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.2rem;
+    margin-left: 15.2rem;
+
+
+}
+
+.price-card {
+    width: 40rem;
+    border-radius: 12px;
+    color: #333;
+}
+
+.price-heading {
+    text-align: center;
+    margin-top: 4.2rem;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.price-card1 {
+    border: 2px solid #fcd7b7;
+}
+
+.price-card2 {
+    background-color: #fae9d9;
+}
+
+.price-tag {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.per-month-price {
+    font-size: 1.5rem;
+    color: rgb(110, 110, 110);
+}
+
+.price-feature {
+    list-style: none;
+    margin-top: 2.0rem;
+    margin-left: 6.5rem;
+}
+
+.price-feature li {
+    margin-bottom: 1.8rem;
+    font-size: 1.9rem;
+}
+
+.get-started {
+    font-size: 2.2rem;
+    display: block;
+    margin-left: 8.7rem;
+    border: none;
+    padding: 1.2rem 3.4rem;
+    background-color: #f08930;
+    border-radius: 1.1rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3.8rem;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.get-started:hover {
+    background-color: #cf711f;
+}
+
+.info-para {
+    font-size: 1.7rem;
+    margin-left: 16.5rem;
+    margin-top: 5.5rem;
+    color: #555;
+}
+
+/* features-section two */
+ion-icon {
+    font-size: 35px;
+}
+
+.features-section-2 {
+    display: flex;
+    gap: 10.0rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3.5rem;
+}
+
+.f-heading {
+    font-size: 2.7rem;
+    margin: 1.8rem 0;
+    color: #333;
+}
+
+.f-para {
+    font-size: 1.7rem;
+    width: 22.4rem;
+}
+
+
+/* Registration container */
+.registration-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9.6rem 0;
+
+
+}
+
+.r-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-image: linear-gradient(to right bottom, #f49746, #e67e22);
+    width: 70%;
+    box-shadow: 6px 14px 29.7px 9px #e4dede;
+    border-radius: 11px;
+
+}
+
+.r-img-box {
+    background-image: linear-gradient(to right bottom, rgba(214, 156, 63, 0.25), rgb(255, 200, 65, 0.28)), url("../img/eating.jpg");
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.r-text-box {
+    padding: 6.5rem;
+}
+
+.r-heading {
+    font-size: 3.6rem;
+    color: rgb(70, 37, 4);
+    margin-bottom: 3.2rem;
+}
+
+.r-para {
+    color: rgb(105, 56, 8);
+    font-size: 1.8rem;
+    margin-bottom: 3.5rem;
+}
+
+.label {
+    font-size: 1.8rem;
+    color: rgb(46, 24, 2);
+    display: block;
+}
+
+.name-email-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 25px;
+}
+
+.name {
+    border: none;
+    margin-top: 7px;
+    height: 3.9rem;
+    width: 100%;
+    background-color: #facca5;
+    color: inherit;
+    padding: 1.2rem;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    /* box-shadow: 0 0 0 5px #facca5 ; */
+}
+
+.name:focus {
+    outline: none;
+    box-shadow: 0 0 5px 8px rgba(244, 192, 146, 0.516);
+}
+
+*:focus {
+    outline: none;
+    /* box-shadow: 0 0 15px rgba(244, 151, 70, 0.516); */
+    box-shadow: 0 0 5px 6px rgba(244, 192, 146, 0.516);
+}
+
+.form-btn {
+    font-family: inherit;
+    font-size: 1.2rem;
+    background-color: #562f0d;
+    color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    height: 3.9rem;
+    font-size: 1.8rem;
+    transition: all 0.5s;
+    align-self: end;
+    margin-top: 2.55rem;
+}
+.where-signIn-column{
+    margin-top: 3.5rem;
+}
+
+
+.form-btn:hover {
+    background-color: #ddd;
+    color: rgb(38, 38, 38);
+
+}
+.select{
+    width: 100%;
+    border-radius: 7px;
+    height: 3.9rem;
+    font-family: inherit;
+    margin-top: 3.2px;
+
+    color: rgb(86, 81, 81);
+    background-color: #facca5;
+}
+
+
+/* Footer  */
+
+.footer{
+    margin-top: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9.6rem 4.5rem;
+    border-top: 1px solid rgb(210, 207, 207);
+}
+.container-footer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 80%;
+    column-gap: 8.6rem;
+    /* background-color: red; */
+}
+.footer-logo{
+    width: 75%;
+    margin-left: 2rem;
+}
+.social-icon{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5.5rem;
+}
+.social-icon div{
+    padding: 10px;
+}
+.copy-right p{
+    font-size: 1.5rem;
+    color: #555;
+}
+.contact-heading{
+    font-size: 1.8rem;
+}
+.column-para{
+    margin: 2.5rem 0;
+    font-size: 1.5rem;
+}
+

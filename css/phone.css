@@ -1,0 +1,76 @@
+.banner {
+    width: 151.9rem;
+}
+.testimonial-section {
+    width: 151.9rem;
+}
+.Sponsers{
+    width: 150rem;
+}
+.container-how{
+    width: 134rem;
+}
+.heading{
+    display: block;
+    text-align: center;
+}
+.sub-heading {
+    /* font-size: 4.2rem; */
+    text-align: center;
+}
+.meals {
+    width: 141rem;
+    margin: 6.6rem auto;
+}
+
+@media(max-width:1500px){
+    .features-section-2 {
+        display: grid;
+        gap: 15rem;
+        column-gap: 19.2rem;
+        row-gap: 2.5rem;
+        grid-template-columns: repeat(2,29.7rem);
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-left: 77rem;
+        margin: 0 47rem;
+        padding: 0 34rem;
+    }
+}
+
+@media(max-width:1000px){
+    .sub-heading {
+        /* font-size: 4.2rem; */
+        text-align: center;
+        width: 122rem;
+    }
+    .heading {
+        display: block;
+        /* text-align: center; */
+        margin-left: 57.5rem;
+        width: 14.5rem;
+    }
+    .footer {
+        margin-top: 4.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 9.6rem 4.5rem;
+        border-top: 1px solid rgb(210, 207, 207);
+        width: 147rem;
+    }
+}
+@media(max-width:1250px){
+    .registration-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 9.6rem 0;
+        /* width: 386%; */
+        margin: 0 at;
+        /* margin: 0 auto; */
+        margin-left: 19rem;
+        width: 121rem;
+    }
+    }
